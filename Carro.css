@@ -1,0 +1,216 @@
+.tudo {
+    margin: auto;
+    display: block;
+}
+#corpo {
+    width: 1000px;
+    height: 170px;
+    border: 5px solid black;
+    border-radius: 500px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+#corpo2 {
+    width: 500px;
+    height: 150px;
+    border: 5px solid black;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 45px;
+}
+
+#porta1 {
+    width: 10px;
+    height: 320px;
+    border: 5px solid black;
+    position: absolute;
+    margin-left: 895px;
+    margin-top: 48px;
+}
+
+#triangulo1 {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent; /* ajusta este valor según el tamaño del triángulo */
+        border-right: 0px solid transparent; /* ajusta este valor según el tamaño del triángulo */
+        border-bottom: 150px solid rgba(0, 0, 0, 0.39); /* ajusta est*/
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 50px;
+}
+
+#triangulo2 {
+    width: 0;
+        height: 0;
+        border-left: 0px solid transparent; /* ajusta este valor según el tamaño del triángulo */
+        border-right: 100px solid transparent; /* ajusta este valor según el tamaño del triángulo */
+        border-bottom: 160px solid rgba(0, 0, 0, 0.39); /* ajusta est*/
+    position: absolute;
+    margin-left: 1158px;
+    margin-top: 45px;
+}
+
+#circulo1 {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 1000px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 500px;
+    background-color: white;
+}
+#circulo2 {
+    width: 130px;
+    height: 130px;
+    border: 5px solid black;
+    border-radius: 1000px;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 510px;
+    background-color: white;
+}
+
+#retangulo1 {
+    width: 10px;
+    height: 130px;
+    border: 4px solid black;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 569px;
+}
+
+#retangulo2 {
+    width: 130px;
+    height: 10px;
+    border: 4px solid black;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 510px;
+}
+
+
+#circulo3 {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 1000px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 1150px;
+    background-color: white;
+}
+#circulo4 {
+    width: 130px;
+    height: 130px;
+    border: 5px solid black;
+    border-radius: 1000px;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 1160px;
+    background-color: white;
+}
+
+#retangulo3 {
+    width: 10px;
+    height: 130px;
+    border: 4px solid black;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 1220px;
+}
+
+#retangulo4 {
+    width: 130px;
+    height: 10px;
+    border: 5px solid black;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 1160px;
+}
+
+#farol {
+    width: 40px;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 1340px; }
+
+#trazeiro {
+    width: 150px;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 350px;
+    background-color: white; }
+
+
+/* Botão para voltar */
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    top: 0%;
+    left: 0%;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+  }
+  
+  button svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  
+  .play {
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+  }
+  
+  button:hover svg {
+    transform: scale(3) translate(50%);
+  }
+  
+  .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  
+  button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  
+  button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+  
+
